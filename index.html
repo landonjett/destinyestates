@@ -6,6 +6,7 @@
     <title>Destiny Estates Sober Living LLC</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -28,13 +29,29 @@
         </nav>
     </header>
 
-    <div class="image-container">
-        <img src="images/hdroad.jpg" alt="ROAD">
-        <div class="image-content">
-            <p>TRUDGE WITH US ON THE ROAD TO HAPPY DESTINY</p>
-            <a href="apply.html" class="apply-button">Apply Now</a>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <img src="images/hdroad.jpg" alt="ROAD">
+                <div class="slide-content">
+                    <p>TRUDGE WITH US ON THE ROAD TO HAPPY DESTINY</p>
+                    <a href="apply.html" class="apply-button">Apply Now</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <!-- <div class="swiper-slide">
+                <img src="images/txcountry.jpg" alt="tx country">
+                <div class="slide-content">
+                    <p>TRUDGE WITH US ON THE ROAD TO HAPPY DESTINY</p>
+                    <a href="apply.html" class="apply-button">Apply Now</a>
+                </div>
+            </div> -->
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
+    
 
     <div class="message-section">
         <p class="new-message">EAST TEXAS' PREMIER DESTINATION FOR A SUPPORTIVE COMMUNITY OF RECOVERY.</p>
@@ -64,5 +81,20 @@
         </div>
         <p>Destiny Estates Sober Living LLC</p>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000, // Delay between slides in milliseconds (5 seconds in this example)
+                disableOnInteraction: false, // Continue autoplay even when user interacts with swiper
+            },
+        });
+    </script>
 </body>
 </html>
