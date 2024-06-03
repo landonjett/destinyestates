@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - Destiny Estates Sober Living LLC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-navbar">
+            <div class="nav-right">
+                <a href="tel:903-707-4708"><i class="fas fa-phone"></i> 903-707-4708</a>
+                <a href="mailto:destinyestates1@gmail.com"><i class="fas fa-envelope"></i> destinyestates1@gmail.com</a>
+            </div>
+        </div>
+        <nav class="main-navbar">
+            <div class="nav-left">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="apply.html">Apply</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact.html">Contact</a> 
+            </div>
+        </nav>
+    </header>
+
+    <div class="card">
+        <h2>Application Form</h2>
+        <form action="submit_form.php" method="post">
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date Of Birth*</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="moveInDate">Desired Move In Date*</label>
+            <input type="date" id="moveInDate" name="moveInDate" required>
+
+            <label for="soberDate">Clean / Sober Date*</label>
+            <input type="date" id="soberDate" name="soberDate" required>
+
+            <label for="drugOfChoice">Drug Of Choice*</label>
+            <select id="drugOfChoice" name="drugOfChoice" required>
+                <option value="heroin">Heroin</option>
+                <option value="opiates">Other Opiates</option>
+                <option value="alcohol">Alcohol</option>
+                <option value="benzos">Benzos</option>
+                <option value="cocaine">Cocaine</option>
+                <option value="marijuana">Marijuana</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="medications">Do You Take Any Of The Following Prescription Medications?*</label>
+            <select id="medications" name="medications" required>
+                <option value="suboxone">Suboxone (is an approved medication)</option>
+                <option value="methadone">Methadone (is an approved medication, provided Client doesn't posses more than 1 day's dose and doesn't 'nod' or seem intoxicated)</option>
+                <option value="opiates_except_suboxone">Any Opiate EXCEPT Suboxone including: Vicodin, Norco's, Oxy/Hydro: morphine/morphone/contin etc.</option>
+                <option value="stimulants">Any Stimulant including: Adderall, Ritalin, etc.</option>
+                <option value="benzos">Any Benzodiazepine including: Xanax, Valium, Klonopin, Ativan etc.</option>
+                <option value="none">NONE OF THE ABOVE</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="treatment">Are you In Treatment Or Attending IOP/PHP?*</label>
+            <select id="treatment" name="treatment" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="recoveryCenter">Which Treatment or Recovery Center (IOP)? (Or None) *</label>
+            <input type="text" id="recoveryCenter" name="recoveryCenter" required>
+
+            <label for="referredBy">Who Referred You To Destiny Estates *</label>
+            <input type="text" id="referredBy" name="referredBy" required>
+
+            <label for="otherInfo">Other Information</label>
+            <textarea id="otherInfo" name="otherInfo"></textarea>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="apply.html">Apply</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact.html">Contact</a> 
+        </div>
+        <p>Destiny Estates Sober Living LLC</p>
+    </div>
+</body>
+</html>
