@@ -394,3 +394,36 @@ body, header, nav, footer, h1, h2, p, a {
 .gallery-item img:hover {
     transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
+
+/* Responsive images for donations */
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Center the images */
+}
+
+.donation-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.donation-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4682B4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.donation-link i {
+    margin-right: 10px;
+}
+
+.donation-link:hover {
+    background-color: #315f8c;
+}
